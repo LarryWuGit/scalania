@@ -16,6 +16,7 @@ class Ex1ThirdElementSpecification extends WordSpec with ShouldMatchers {
   "Third element" should {
     "work correctly" in {
       third(List(1, 2, 3, 3, 4)) should be(2)
+
       third(ParSeq(1, 2, 3, 3, 5)) should be(2)
     }
 
