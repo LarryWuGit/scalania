@@ -3,7 +3,7 @@ script:
   - sbt ++$TRAVIS_SCALA_VERSION answers/coverage answers/test
 after_success: "sbt ++$TRAVIS_SCALA_VERSION answers/coveralls"
 scala:
-  - 2.11.4
+  - 2.11.11
 jdk:
   - oraclejdk8
 notifications:
